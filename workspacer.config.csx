@@ -49,7 +49,7 @@ return new Action<IConfigContext>((IConfigContext context) =>
             },
             new TextWidget(">>"),
             new TextWidget(".:::  🔋"), new BatteryWidget(),
-            new TimeWidget(1000, " ::: 📅 HH:mm dd-MMM  :::"), 
+            new TimeWidget(1000, " ::: ⏲️ HH:mm   📅 dd-MMM  :::"), 
             new ActiveLayoutWidget(),
             new TextWidget(":::."),
             new FocusedMonitorWidget(){
