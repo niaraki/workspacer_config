@@ -103,6 +103,7 @@ return new Action<IConfigContext>((IConfigContext context) =>
     context.WindowRouter.AddFilter((window) => !window.Title.Contains("Discovered"));
     context.WindowRouter.AddFilter((window) => !window.Title.ToLower().Contains("% complete"));
     context.WindowRouter.AddFilter((window) => !window.Title.StartsWith("Delete"));
+    context.WindowRouter.AddFilter((window) => !window.Title.StartsWith("Folder"));
     context.WindowRouter.AddFilter((window) => !window.Title.Contains("Info"));
     context.WindowRouter.AddFilter((window) => !window.Title.Contains("Warning"));
     context.WindowRouter.AddFilter((window) => !window.Class.Equals("ShellTrayWnd"));
